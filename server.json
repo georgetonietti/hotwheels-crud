@@ -1,0 +1,180 @@
+{
+  "cars": [
+    {
+      "id": "3c4d5e6f-4321-4237-bfee-20e43995512d",
+      "brand": "Dodge",
+      "name": "Challenger R/T",
+      "price": 1150000,
+      "color": "white",
+      "year": 2021
+    },
+    {
+      "id": "4d5e6f7g-5432-4237-bfee-20e43995512d",
+      "brand": "Tesla",
+      "name": "Model S",
+      "price": 900000,
+      "color": "silver",
+      "year": 2022
+    },
+    {
+      "id": "5e6f7g8h-6543-4237-bfee-20e43995512d",
+      "brand": "BMW",
+      "name": "M3",
+      "price": 1300000,
+      "color": "blue",
+      "year": 2020
+    },
+    {
+      "id": "6f7g8h9i-7654-4237-bfee-20e43995512d",
+      "brand": "Audi",
+      "name": "RS7",
+      "price": 1400000,
+      "color": "black",
+      "year": 2021
+    },
+    {
+      "id": "7g8h9i0j-8765-4237-bfee-20e43995512d",
+      "brand": "Mercedes-Benz",
+      "name": "AMG GT",
+      "price": 1350000,
+      "color": "yellow",
+      "year": 2019
+    },
+    {
+      "id": "8h9i0j1k-9876-4237-bfee-20e43995512d",
+      "brand": "Lamborghini",
+      "name": "Aventador",
+      "price": 3000000,
+      "color": "green",
+      "year": 2018
+    },
+    {
+      "id": "9i0j1k2l-0987-4237-bfee-20e43995512d",
+      "brand": "Ferrari",
+      "name": "488 GTB",
+      "price": 2800000,
+      "color": "red",
+      "year": 2020
+    },
+    {
+      "id": "0j1k2l3m-1098-4237-bfee-20e43995512d",
+      "brand": "Porsche",
+      "name": "911 Turbo S",
+      "price": 2500000,
+      "color": "silver",
+      "year": 2021
+    },
+    {
+      "id": "1k2l3m4n-2109-4237-bfee-20e43995512d",
+      "brand": "McLaren",
+      "name": "720S",
+      "price": 2700000,
+      "color": "orange",
+      "year": 2020
+    },
+    {
+      "id": "2l3m4n5o-3210-4237-bfee-20e43995512d",
+      "brand": "Aston Martin",
+      "name": "Vantage",
+      "price": 2300000,
+      "color": "grey",
+      "year": 2019
+    },
+    {
+      "id": "3m4n5o6p-4321-4237-bfee-20e43995512d",
+      "brand": "Jaguar",
+      "name": "F-Type",
+      "price": 2100000,
+      "color": "blue",
+      "year": 2022
+    },
+    {
+      "id": "4n5o6p7q-5432-4237-bfee-20e43995512d",
+      "brand": "Maserati",
+      "name": "GranTurismo",
+      "price": 2200000,
+      "color": "white",
+      "year": 2018
+    },
+    {
+      "id": "5o6p7q8r-6543-4237-bfee-20e43995512d",
+      "brand": "Nissan",
+      "name": "GT-R",
+      "price": 1900000,
+      "color": "black",
+      "year": 2021
+    },
+    {
+      "id": "6p7q8r9s-7654-4237-bfee-20e43995512d",
+      "brand": "Toyota",
+      "name": "Supra",
+      "price": 1700000,
+      "color": "red",
+      "year": 2020
+    },
+    {
+      "id": "7q8r9s0t-8765-4237-bfee-20e43995512d",
+      "brand": "Subaru",
+      "name": "WRX STI",
+      "price": 1500000,
+      "color": "blue",
+      "year": 2019
+    },
+    {
+      "id": "8r9s0t1u-9876-4237-bfee-20e43995512d",
+      "brand": "Honda",
+      "name": "Civic Type R",
+      "price": 1600000,
+      "color": "white",
+      "year": 2022
+    },
+    {
+      "id": "9s0t1u2v-0987-4237-bfee-20e43995512d",
+      "brand": "Alfa Romeo",
+      "name": "Giulia Quadrifoglio",
+      "price": 1800000,
+      "color": "green",
+      "year": 2020
+    },
+    {
+      "id": "0t1u2v3w-1098-4237-bfee-20e43995512d",
+      "brand": "Lotus",
+      "name": "Evora",
+      "price": 2100000,
+      "color": "yellow",
+      "year": 2018
+    },
+    {
+      "id": "4d84f492-b408-46e5-aff5-9d2f03b05b97",
+      "brand": "Fiat",
+      "name": "Chronus",
+      "price": 0,
+      "color": "branco",
+      "year": 2024
+    },
+    {
+      "id": "604371c9-3dec-44ac-a520-7074f2b4e326",
+      "brand": "Fiat",
+      "name": "Chronus",
+      "price": 213000,
+      "color": "branco",
+      "year": 2024
+    },
+    {
+      "id": "dcaedd33-8c2d-4dba-ab8b-4fcaf2013af3",
+      "brand": "Fiat",
+      "name": "Chronus",
+      "price": 213000,
+      "color": "branco",
+      "year": 2024
+    },
+    {
+      "brand": "Ford",
+      "name": "Mustang",
+      "price": 2000000,
+      "color": "preto",
+      "year": 2018,
+      "id": "367428dc-bbc9-4c0f-a0bf-9a276e96a395"
+    }
+  ]
+}
