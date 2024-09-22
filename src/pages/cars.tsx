@@ -4,6 +4,7 @@ import CarsFilter from "../components/carsSearch";
 import CreateCarModal from "../components/modal/createCarModal";
 import { useState } from "react";
 import Button from "../components/ui/button";
+import axios from "axios"
 
 export type CarResponse = Car[]
 
@@ -22,22 +23,29 @@ export default function Cars() {
     const { data: carsResponse, isLoading } = useQuery<CarResponse>({
         queryKey: ['cars'],
         queryFn: async () => {
-            const response = await fetch('http://localhost:3333/cars')
-            const data = response.json()
+            try {
+                const response = await axios.get<CarResponse>('http://localhost:5000/cars');
 
-            return data
+                if (response.status === 200) {
+                    const data = response.data;
+                    return data;
+                } else {
+                    throw new Error('Failed to fetch cars');
+                }
+            } catch (error) {
+                console.error(error);
+                throw new Error('Error fetching cars');
+            }
         }
     })
 
     const { mutateAsync: createCarFn } = useMutation({
         mutationFn: async (car: Car) => {
-           const response =  await fetch('http://localhost:3333/cars', {
-                method: "POST",
-                headers: {"Content-type": "application/json"},
-                body: JSON.stringify(car)
-            })
-            if(response.ok) {
-                const data = response.json()
+
+            const response = await axios.post('http://localhost:5000/cars',car)
+
+            if (response.status === 200 || response.status === 201) {
+                const data = response.data
                 alert(`Carro cadastrado com sucesso! Status: ${response.status}`)
                 return data
             } else {
@@ -64,7 +72,7 @@ export default function Cars() {
                 </div>
                 <CarList list={carsResponse} />
                 <CreateCarModal createCar={createCarFn} isOpen={isOpen} onClose={closeModal} />
-                
+
             </div>
         )
     );

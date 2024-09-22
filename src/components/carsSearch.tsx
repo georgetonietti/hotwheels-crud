@@ -18,6 +18,7 @@ export default function CarsSearch() {
     })
 
     function handleSerchCars(data: CarsSearchSchema) {
+        console.log("Função chamada com dados:", data); // Adicione esta linha
         setSearchParams(params => {
             params.set('search', data.search)
             return params
@@ -25,7 +26,7 @@ export default function CarsSearch() {
     }
 
     return (
-        <form onSubmit={handleSubmit(handleSerchCars)} className="w-full h-16 flex gap-4">
+        <form onSubmit={handleSubmit(handleSerchCars)} className="w-full h-16 flex gap-4" role="form">
             <input 
                 {...register('search')}
                 type="text"

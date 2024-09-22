@@ -10,9 +10,5 @@ export default [
     {
         name: "Carros",
         link: "/cars"
-    },
-    {
-        name: "Adicionar Carro",
-        link: "/carform"
-    },
+    }
 ]

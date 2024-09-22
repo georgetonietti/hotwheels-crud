@@ -3,6 +3,7 @@ import CarCard from "./carCard";
 import EditCarModal from "./modal/editCarModal";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useSearchParams } from "react-router-dom";
+import axios from "axios"
 
 interface CarListProps {
     list: Car[] | undefined
@@ -28,13 +29,9 @@ export default function CarList({ list }: CarListProps) {
 
         const { mutateAsync: editCarFn } = useMutation({
         mutationFn: async (car: Car) => {
-           const response =  await fetch(`http://localhost:3333/cars/${car.id}`, {
-                method: "PUT",
-                headers: {"Content-type": "application/json"},
-                body: JSON.stringify(car)
-            })
-            if(response.ok) {
-                const data = response.json()
+           const response =  await axios.put(`http://localhost:5000/cars`, car)
+            if(response.status === 200 || response.status === 204) {
+                const data = response.data
                 alert(`Carro editado com sucesso! Status: ${response.status}`)
                 return data
             } else {
@@ -52,12 +49,9 @@ export default function CarList({ list }: CarListProps) {
     })
         const { mutateAsync: removeCarFn } = useMutation({
         mutationFn: async (id: string) => {
-           const response =  await fetch(`http://localhost:3333/cars/${id}`, {
-                method: "DELETE",
-                headers: {"Content-type": "application/json"},
-            })
-            if(response.ok) {
-                const data = response.json()
+           const response =  await axios.delete(`http://localhost:5000/cars/${id}`)
+            if(response.status === 200 || response.status === 204) {
+                const data = response.data
                 alert(`Carro removido com sucesso! Status: ${response.status}`)
                 return data
             } else {
